@@ -50,11 +50,11 @@ def validar_fecha(fecha):
             dia = int(fecha[4:8])
             if 1 <= dia <= 31:
                 if 1 <= mes <= 12:
-                    if anio>2030:
+                    if anio<2030:
                         return True
         return False
     except ValueError:
-        print("el dato no es un numero")
+        print("el dato no es un numero") 
         exit(1)
 fecha="20552000"
 print (validar_fecha(fecha))
