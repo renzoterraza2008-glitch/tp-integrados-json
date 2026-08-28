@@ -16,9 +16,8 @@ En esta primera instacia con el programa leyo los datos en el txt y los separo e
 ## Forma de ejecucion prevista 
 El programa se ejecuta desde la consola pasando dos argumentos obligatorios por línea de comandos: la ruta del archivo de entrada (.txt) y la ruta del archivo de salida (.json).
 
-##Formato de los archivos
 Archivo de entrada (.txt)
-Texto plano proveniente del Servicio Meteorológico Nacional con ancho de columnas o separado por espacios, incluyendo encabezados y observaciones horarias:
+El texto proviene del Servicio Meteorológico Nacional con ancho de columnas o separado por espacios, incluyendo encabezados y observaciones horarias:
 datohorario.txt
 
 FECHA     HORA  TEMP   HUM   PNM     DD    FF     NOMBRE
@@ -40,5 +39,5 @@ Dirección del viento: Debe ser un valor numérico entre 0 y 360 grados.
 
 Velocidad del viento: Debe ser un valor numérico mayor o igual a 0.
 
-Estación (Nombre): No puede ser una cadena vacía (soporta nombres compuestos de más de una palabra).
+Estación (Nombre): No puede ser una cadena vacía.
 
