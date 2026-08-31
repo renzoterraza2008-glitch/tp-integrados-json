@@ -1,18 +1,22 @@
 import sys
-
+import json
 
 if len(sys.argv) < 3:
     print("Error: Te faltan argumentos en la terminal.")
     sys.exit(1)
     
 archivo_txt = sys.argv[1]
+archivo_json = sys.argv[2]
 validos = []
 invalidos = []
 
 
-with open("datohorario.txt", "r") as datoshorario:
-    for i,linea in enumerate(datoshorario):
-        if i>1:
+with open(archivo_txt, "r") as datoshorario:
+        for i, linea in enumerate(datoshorario):
+            if i > 1:
+                datos = linea.split()
+                if len(datos) < 8:
+                    continue
             datos=linea.split()
             fecha=datos[0]
             hora=datos[1]
