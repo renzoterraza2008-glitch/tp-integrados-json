@@ -1,9 +1,5 @@
 import sys
 import json
-
-if len(sys.argv) < 3:
-    print("Error: Te faltan argumentos en la terminal.")
-    sys.exit(1)
     
 archivo_txt = sys.argv[1]
 archivo_json = sys.argv[2]
