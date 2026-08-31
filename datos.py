@@ -1,3 +1,15 @@
+import sys
+
+
+if len(sys.argv) < 3:
+    print("Error: Te faltan argumentos en la terminal.")
+    sys.exit(1)
+    
+archivo_txt = sys.argv[1]
+validos = []
+invalidos = []
+
+
 with open("datohorario.txt", "r") as datoshorario:
     for i,linea in enumerate(datoshorario):
         if i>1:
