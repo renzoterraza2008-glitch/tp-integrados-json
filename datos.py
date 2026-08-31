@@ -4,8 +4,8 @@ import json
 archivo_txt = sys.argv[1]
 
 try:
-    with open(archivo_txt, "r") as datoshorario:
-            for i, linea in enumerate(datoshorario):
+    with open(archivo_txt, "r") as datohorario:
+            for i, linea in enumerate(datohorario):
                 if i > 1:
                     datos = linea.split()
                 if len(datos) < 8:
